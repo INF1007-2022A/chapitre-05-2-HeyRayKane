@@ -14,7 +14,7 @@ def get_bill(name, data):
 	taxes = sous_total * 0.15
 	total = sous_total + taxes
 	bill = name
-	donnees = {"SOUS TOTAL": sous_total, "TAXES     ": taxes, "TOTAL     ": total}
+	donnees = {"SOUS TOTAL ": sous_total, "TAXES      ": taxes, "TOTAL      ": total}
 	for a,b in donnees.items():
 		bill += chr(10) + a + f"{b:>10.2f} $"
 	return bill
